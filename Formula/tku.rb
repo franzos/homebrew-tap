@@ -1,22 +1,22 @@
 class Tku < Formula
   desc "Token Usage CLI for Claude Code, Codex and others"
   homepage "https://github.com/franzos/tku"
-  version "0.1.6"
+  version "0.1.7"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/franzos/tku/releases/download/v#{version}/tku-aarch64-apple-darwin.tar.gz"
-      sha256 "83af8b5de518b978e4181b19a5411c17e83c35323648ad8ee885f623b46942f7"
+      sha256 "f8c64f7a21781f230245031a79233ea7fa5912e2bf3e2cd3203ca454ee9a05bc"
     else
       url "https://github.com/franzos/tku/releases/download/v#{version}/tku-x86_64-apple-darwin.tar.gz"
-      sha256 "16a85facccd6ad1d69ce8e07de7ce7cb6416568a8e3737754f0824b3d8c56fda"
+      sha256 "84bfcf9a7e7aebcfed5d95f2d9c3f958d35c749a5bc2fcb3b79be7583ad2981f"
     end
   end
 
   on_linux do
     url "https://github.com/franzos/tku/releases/download/v#{version}/tku-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "8f1aef9320e50b021602952301af4f1132e469c90417229526b8b9fc53e1ebf0"
+    sha256 "7b9cf7b17f9b930ce76a94e715f2db3da5a52a1dc46593362fa1da29292b9589"
   end
 
   def install
