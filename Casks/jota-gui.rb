@@ -1,12 +1,12 @@
 cask "jota-gui" do
-  version "0.2.4"
+  version "0.2.5"
 
   if Hardware::CPU.arm?
     url "https://github.com/franzos/jota/releases/download/v#{version}/jota-gui-aarch64-apple-darwin.dmg"
-    sha256 "eb217055ec27eec7120f522695b1622c55452fa3152b021fa2a210a1e01634cf"
+    sha256 "87286c1978abc6bd8e6b9e4419ca4b745875ff75f6f3b9a6c532bc25006a177e"
   else
     url "https://github.com/franzos/jota/releases/download/v#{version}/jota-gui-x86_64-apple-darwin.dmg"
-    sha256 "7c6af21b8eda969f77f005c6fbafd52caeadd6d344a133f4e3cb66ca883d28b3"
+    sha256 "3ef8a558d9edef41b22ee0a4aa7428ed1d701cfb3b9881a0af54580a793381ff"
   end
 
   name "Jota"
