@@ -1,22 +1,22 @@
 class Envstash < Formula
   desc "Manage .env files across git branches with versioning, diffing, and optional encryption"
   homepage "https://github.com/franzos/envstash"
-  version "0.1.11"
+  version "0.1.12"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/franzos/envstash/releases/download/v#{version}/envstash-aarch64-apple-darwin.tar.gz"
-      sha256 "8633e419e2eba6171036afa404991b4b876d33376da71b79b21c1fd9353f1818"
+      sha256 "7c7397d08e1e924b4af379d5b040a79d18d56888ba33ce46fc0fc0acd21137dd"
     else
       url "https://github.com/franzos/envstash/releases/download/v#{version}/envstash-x86_64-apple-darwin.tar.gz"
-      sha256 "2315ebb4c981001e2ad8dc4472e74ded388c985273300ea7b3fbaeadac3a84c9"
+      sha256 "134709b5f3401ab0daf2dbdc07328da869a33f314486fb615b56a137361cdc07"
     end
   end
 
   on_linux do
     url "https://github.com/franzos/envstash/releases/download/v#{version}/envstash-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "4450700e587ee885743a60235cde4609f0a55b246020ef833c4bb894b67c53fb"
+    sha256 "30a6b69b359a9cbfcd12fc1fba63f8ab6594d5ccb38dc4ee2d002c222248164f"
   end
 
   def install
