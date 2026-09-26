@@ -1,22 +1,22 @@
 class Jota < Formula
   desc "Monero-inspired wallet for IOTA Rebased"
   homepage "https://github.com/franzos/jota"
-  version "0.2.6"
+  version "0.2.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/franzos/jota/releases/download/v#{version}/jota-aarch64-apple-darwin.tar.gz"
-      sha256 "21fb9afd48899953fc72e1526db4bd819a229c94497c8dfe288faca80fb56a08"
+      sha256 "f20c358cbb3075d83226a29540990a03ab22db3be32ad72455843d6a68a52af1"
     else
       url "https://github.com/franzos/jota/releases/download/v#{version}/jota-x86_64-apple-darwin.tar.gz"
-      sha256 "5355172a03221a5988f80f484d71ce9a36ed7ed82ad0917042ec678c01e46e35"
+      sha256 "a3ba58b362687d43eccc46462a5921371f89b077725c2dab38426335c9a13ebe"
     end
   end
 
   on_linux do
     url "https://github.com/franzos/jota/releases/download/v#{version}/jota-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "a5a2fb7a1b301cd0f8c0db79ed9809cc53a39c4202e647eb841275c0c647d713"
+    sha256 "e8aa1abe7a2ea05e57f0555d03a8baf457223b72aa743e9d7572c09638e380d3"
   end
 
   def install
