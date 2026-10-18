@@ -93,6 +93,7 @@ update_formula "franzos/tku"     "tku"     "Formula/tku.rb"
 update_formula "franzos/envstash" "envstash" "Formula/envstash.rb"
 update_formula "franzos/jota"    "jota"    "Formula/jota.rb"
 update_formula "franzos/vatic"   "vatic"   "Formula/vatic.rb"
+update_formula "franzos/shelf"   "shelf"   "Formula/shelf.rb"
 
 update_cask "franzos/jota" "jota-gui" "Casks/jota-gui.rb"
 
